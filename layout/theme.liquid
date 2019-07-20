@@ -27,7 +27,9 @@
   {{ 'style.scss' | asset_url | stylesheet_tag }}
 </head>
 <body>
-  <h1>Hello baws</h1>
+  
   {{ content_for_layout }}
+  {{ 'theme.js' | asset_url | script_tag }}
+
 </body>
 </html>
