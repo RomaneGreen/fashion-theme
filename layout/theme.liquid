@@ -33,7 +33,8 @@
   {{ 'style.scss' | asset_url | stylesheet_tag }}
 </head>
 <body>
-  
+
+  {% section 'header' %}
   {{ content_for_layout }}
 
   {{ 'theme.js' | asset_url | script_tag }}
