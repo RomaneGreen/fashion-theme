@@ -84,7 +84,11 @@
                                 <a href="{{product.url}}"><i class="fa fa-search"></i></a>
                               </li>
                               <li>
-                                <a href="{{product.url}}"><i class="fa fa-shopping-cart"></i></a>
+                                  <form id="form-{{product.handle}}" action="/cart/add" method="post">
+                                    <input type="hidden" name="id" id="" value="{{product.variants.first.id}}">
+                        <a onclick="document.getElementById('form-{{product.handle}}').submit()"><i class="fa fa-shopping-cart"></i></a>
+                                  </form>
+                               
                               </li>
                             </ul>
                           </div>
