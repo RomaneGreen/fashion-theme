@@ -1,2 +1,2 @@
 # fashion-theme
-shopify theme
+shopify fashion theme
